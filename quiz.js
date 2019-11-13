@@ -280,7 +280,7 @@ app.post('/login',(req, res) => {
   for(let i in data){
    
     console.log(req.body.user+"$$$$"+req.body.pass);
-    console.log(data[0].username+"@@@@"+data[0].password);
+    console.log(data[i].username+"@@@@"+data[i].password);
 
 
     if(req.body.user==data[i].username && req.body.pass==data[i].password){  
