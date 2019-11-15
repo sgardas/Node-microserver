@@ -64,14 +64,14 @@ app.post('/login',(req, res) => {
   //console.log(data);
 
   //console.log(req.body);
-  console.log('Returning login list');
+  //console.log('Returning login list');
 
   var flag = 1;
 
   for(let i in data){
    
-    console.log(req.body.user+"$$$$"+req.body.pass);
-    console.log(data[i].username+"@@@@"+data[i].password);
+   // console.log(req.body.user+"$$$$"+req.body.pass);
+   // console.log(data[i].username+"@@@@"+data[i].password);
 
 
     if(req.body.user==data[i].username && req.body.pass==data[i].password){  
@@ -91,6 +91,10 @@ app.post('/login',(req, res) => {
   if(flag==0){
     res.send({"status":"success"});
   }else{
+    winston.log({
+      level: 'debug',
+      message: 'wrong username or password'
+    });
     res.send({"status":"failure"});
   }
 
