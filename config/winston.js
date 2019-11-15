@@ -4,13 +4,13 @@ const winston = require('winston');
 //define custom setting for transport i.e file, console
 let options = {
     file: {
-        level: 'info',
+        level: 'debug',
         filename: '${appRoot}/logs/app.log',
         handleExceptions: true,
         json: true,
-        maxsize: 5242880,
-        maxFiles: 5,
-        colorize: false,
+        maxsize: 10485760,
+        maxFiles: 10,
+        colorize: true,
     },
     console: {
         level: 'debug',
