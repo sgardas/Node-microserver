@@ -54,5 +54,29 @@
     "opt2": "fs.deletedir(path, callback)",
         "opt3": "fs.deldirectory(path, callback)",
         "answer": "fs.rmdir(path, callback)"
+    },
+    {
+        "qnum" :"8.",
+        "q": "Node.js is a ___________ language?",
+        "opt1": "Server Side",
+    "opt2": "Client Side",
+        "opt3": "Both",
+        "answer": "Server Side"
+    },
+    {
+        "qnum" :"9.",
+        "q": "Node.js is written in _______?",
+        "opt1": "JavaScript",
+    "opt2": "C & C++",
+        "opt3": "All",
+        "answer": "All"
+    },
+    {
+        "qnum" :"10.",
+        "q": "In Node process is ____________?",
+        "opt1": "Global Object",
+    "opt2": "Local Object",
+        "opt3": "Both",
+        "answer": "Global"
     }
 ]
